@@ -141,7 +141,7 @@ button {
   background-color: #0e0e0e;
   height: 758px;
   display: flex;
-  background-image: linear-gradient(180deg, rgba(14, 14, 14, 0.85) 99.73%, rgba(14, 14, 14, 0.85) 99.74%), url(../../img/hero-office-min.png);
+  background-image: linear-gradient(180deg, rgba(14, 14, 14, 0.85) 99.73%, rgba(14, 14, 14, 0.85) 99.74%), url(../../img/hero-office-min.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   max-width: 1440px;
