@@ -315,7 +315,7 @@ button {
 .services-subtitle::before {
   display: block;
   content: "";
-  width: 143px;
+  width: 150px;
   height: 2px;
   background: #d8d8d8;
 }
@@ -472,6 +472,84 @@ button {
   padding-top: 50px;
   display: flex;
   gap: 20px;
+}
+
+.container-feedback {
+  padding: 200px;
+}
+
+.feedback-title {
+  max-width: 530px;
+  padding: 19px 0 130px 0;
+}
+
+.feedback-subtitle {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.feedback-subtitle::before {
+  display: block;
+  content: "";
+  width: 150px;
+  height: 2px;
+  background: #d8d8d8;
+}
+
+.feedback-list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+}
+
+.feedback-list-item {
+  position: relative;
+  width: 370px;
+  height: 200px;
+  border-radius: 5px 5px;
+  flex-shrink: 0;
+  background: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+.feedback-list-item__span {
+  background-color: #ffeb38;
+  position: absolute;
+  border-radius: 50%;
+  width: 80px;
+  height: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 3px solid #fff;
+  left: 38%;
+  top: -25%;
+}
+
+.feddback-list-title {
+  color: #000;
+  text-align: center;
+  font-family: Poppins;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: 0.02em;
+}
+
+.feddback-list-subtitle {
+  color: #696969;
+  text-align: center;
+  font-family: Poppins;
+  font-size: 11px;
+  font-weight: 400;
+  line-height: 155%;
+  letter-spacing: 0.02em;
 }
 
 @keyframes snake-rotete-button {
