@@ -1,24 +1,38 @@
+$color_1: #0e0e0e;
+$font-family_1: Inter;
+$font-family_2: Poppins;
+$background-color_1: #ffffff;
+
 .header {
   display: flex;
   align-items: center;
   justify-content: center;
 }
-
-.header-container {
+.header__container {
   display: flex;
   justify-content: space-between;
   align-items: center;
   height: 95px;
 }
-// -------------------------------
-
 .logo {
   display: flex;
   align-items: center;
   gap: 5px;
-  font-family: Inter;
+  font-family: $font-family_1;
   font-size: 24px;
   font-weight: 600;
+}
+.header__button {
+  width: 128px;
+  height: 44px;
+  border-radius: 5px;
+  background: $yellowColor;
+  color: $color_1;
+  font-family: $font-family_2;
+  font-size: 16px;
+  font-weight: 400;
+  letter-spacing: 0.02em;
+  text-align: center;
 }
 
 .nav__list {
@@ -26,47 +40,37 @@
   align-items: center;
   gap: 40px;
 }
-
 .nav__item__link {
   position: relative;
-  font-family: Poppins;
+  font-family: $font-family_2;
   letter-spacing: 0.02em;
+  &::before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 0;
+    height: 2px;
+    background-color: $background-color_1;
+    transition: 0.3s ease;
+  }
+  &:hover {
+    &::before {
+      width: 100%;
+    }
+  }
+  &:focus {
+    &::before {
+      height: 4px;
+    }
+  }
 }
-
-.nav__item__link::before {
-  content: "";
-  position: absolute;
-  bottom: 0;
-  left: 50%;
-  transform: translateX(-50%);
-  width: 0;
-  height: 2px;
-  background-color: #ffffff;
-  transition: 0.3s ease;
-}
-
-.nav__item__link:hover::before {
-  width: 100%;
-}
-.nav__item__link:focus::before {
-  height: 4px;
-}
-// -------------------------------
-
-.header-button {
-  width: 128px;
-  height: 44px;
-  border-radius: 5px;
-  background: $yellowColor;
-  color: #0e0e0e;
-  font-family: Poppins;
-  font-size: 16px;
-  font-weight: 400;
-  letter-spacing: 0.02em;
-  text-align: center;
-}
-
-.header-button:hover,
-.header-button:focus {
-  animation: snake-rotete-button 2.5s ease 0s infinite normal both;
+.header__button {
+  &:hover {
+    animation: snake-rotete-button 2.5s ease 0s infinite normal both;
+  }
+  &:focus {
+    animation: snake-rotete-button 2.5s ease 0s infinite normal both;
+  }
 }

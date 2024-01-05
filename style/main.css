@@ -75,7 +75,7 @@ button {
   justify-content: center;
 }
 
-.header-container {
+.header__container {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -91,39 +91,7 @@ button {
   font-weight: 600;
 }
 
-.nav__list {
-  display: flex;
-  align-items: center;
-  gap: 40px;
-}
-
-.nav__item__link {
-  position: relative;
-  font-family: Poppins;
-  letter-spacing: 0.02em;
-}
-
-.nav__item__link::before {
-  content: "";
-  position: absolute;
-  bottom: 0;
-  left: 50%;
-  transform: translateX(-50%);
-  width: 0;
-  height: 2px;
-  background-color: #ffffff;
-  transition: 0.3s ease;
-}
-
-.nav__item__link:hover::before {
-  width: 100%;
-}
-
-.nav__item__link:focus::before {
-  height: 4px;
-}
-
-.header-button {
+.header__button {
   width: 128px;
   height: 44px;
   border-radius: 5px;
@@ -136,8 +104,39 @@ button {
   text-align: center;
 }
 
-.header-button:hover,
-.header-button:focus {
+.nav__list {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+}
+
+.nav__item__link {
+  position: relative;
+  font-family: Poppins;
+  letter-spacing: 0.02em;
+}
+.nav__item__link::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 0;
+  height: 2px;
+  background-color: #ffffff;
+  transition: 0.3s ease;
+}
+.nav__item__link:hover::before {
+  width: 100%;
+}
+.nav__item__link:focus::before {
+  height: 4px;
+}
+
+.header__button:hover {
+  animation: snake-rotete-button 2.5s ease 0s infinite normal both;
+}
+.header__button:focus {
   animation: snake-rotete-button 2.5s ease 0s infinite normal both;
 }
 
