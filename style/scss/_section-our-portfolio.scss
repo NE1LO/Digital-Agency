@@ -1,0 +1,78 @@
+.section-portfolio {
+  background: #0e0e0e;
+  padding: 120px 0;
+}
+
+.container-portfolio {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.subtitle-portfolio {
+  position: relative;
+  color: #fff;
+  text-align: justify;
+  font-family: Poppins;
+  line-height: 155%;
+  letter-spacing: 0.02em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+.subtitle-portfolio::after {
+  content: " ";
+  display: block;
+  background-color: #fff;
+  width: 160px;
+  height: 2px;
+}
+
+.subtitle-portfolio::before {
+  content: " ";
+  display: block;
+  background-color: #fff;
+  width: 160px;
+  height: 2px;
+}
+
+.title-portfolio {
+  text-align: center;
+  max-width: 450px;
+  padding: 35px 0 60px 0;
+}
+
+.about-list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 12px;
+}
+
+.about-list-item__button {
+  border-radius: 5px;
+  background: $yellowColor;
+  padding: 10px 25px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #000;
+  font-family: Poppins;
+  letter-spacing: 0.02em;
+}
+
+.about-list-item__button-error {
+  background-color: #fff;
+  padding: 10px 25px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.about-photo-list {
+  padding-top: 50px;
+  display: flex;
+  gap: 20px;
+}
