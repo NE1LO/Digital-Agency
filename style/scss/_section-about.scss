@@ -1,7 +1,10 @@
 .section-about {
-  background: #0e0e0e;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   height: 560px;
-  padding: 112px 0;
+  padding: 110px 0;
+  background: #0e0e0e;
 }
 
 .container-about {

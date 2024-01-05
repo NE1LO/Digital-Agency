@@ -1,5 +1,9 @@
-.container-feedback {
-  padding: 200px;
+.section-feedback {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 500px;
+  padding: 110px 0;
 }
 
 .feedback-title {

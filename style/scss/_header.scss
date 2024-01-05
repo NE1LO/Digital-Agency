@@ -1,16 +1,21 @@
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 .header-container {
   display: flex;
   justify-content: space-between;
   align-items: center;
   height: 95px;
-  margin-bottom: 18px;
 }
+// -------------------------------
 
 .logo {
   display: flex;
   align-items: center;
   gap: 5px;
-  //   tekst
   font-family: Inter;
   font-size: 24px;
   font-weight: 600;
@@ -46,6 +51,7 @@
 .nav__item__link:focus::before {
   height: 4px;
 }
+// -------------------------------
 
 .header-button {
   width: 128px;
@@ -53,7 +59,6 @@
   border-radius: 5px;
   background: $yellowColor;
   color: #0e0e0e;
-  //   tekst
   font-family: Poppins;
   font-size: 16px;
   font-weight: 400;
