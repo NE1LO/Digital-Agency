@@ -570,6 +570,101 @@ button {
   letter-spacing: 0.02em;
 }
 
+.section-contacts {
+  height: 850px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container-contscts {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 30px;
+}
+
+.contact-form-block {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.contscts-title {
+  max-width: 650px;
+  padding-bottom: 30px;
+}
+
+.contsct-subtitle {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding-bottom: 20px;
+}
+
+.contsct-subtitle::before {
+  display: block;
+  content: "";
+  width: 150px;
+  height: 2px;
+  background: #d8d8d8;
+}
+
+.contsct-subtitle-more {
+  max-width: 530px;
+  padding-bottom: 30px;
+}
+
+.feedback-form {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+
+.form-input {
+  width: 530px;
+  height: 50px;
+  border-radius: 5px;
+  border: 1px solid #cacaca;
+  background: #fff;
+}
+
+.form-textarea {
+  width: 533px;
+  height: 149px;
+  flex-shrink: 0;
+  resize: none;
+}
+
+.form-button {
+  width: 180px;
+  height: 48px;
+  border-radius: 5px;
+  background: #ffeb38;
+  color: #0e0e0e;
+  font-family: Poppins;
+  font-size: 16px;
+  font-weight: 400;
+  letter-spacing: 0.02em;
+  text-align: center;
+  transition: 0.3s;
+}
+
+.form-button:hover,
+.form-button:focus {
+  box-shadow: 8px 8px 0px 0px rgba(255, 235, 56, 0.5215686275);
+}
+
+.container-footer {
+  padding: 100px 0 100px 0;
+}
+
+.container-footer {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+}
+
 @keyframes snake-rotete-button {
   0% {
     transform: translate(0);
