@@ -1,0 +1,45 @@
+@mixin displayFlexCenter($justify-content: center, $align-items: center) {
+  display: flex;
+  justify-content: $justify-content;
+  align-items: $align-items;
+}
+// ----------------------------------
+
+@mixin title {
+  color: #fff;
+  font-family: Poppins;
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 125.5%;
+  letter-spacing: 0.02em;
+}
+
+// ----------------------------------
+
+@mixin subtitle($color: #fff, $textalgin: center, $fontsize: 16px) {
+  color: $color;
+  font-family: Poppins;
+  font-size: $fontsize;
+  text-align: $textalgin;
+  letter-spacing: 0.02em;
+}
+
+// ----------------------------------
+
+@mixin buttonStyle(
+  $witch: 180px,
+  $height: 50px,
+  $background: $yellowColor,
+  $color: #000000
+) {
+  font-family: Poppins;
+  font-size: 16px;
+  width: $witch;
+  height: $height;
+  background: $background;
+  color: $color;
+  letter-spacing: 0.02em;
+}
+
+// ----------------------------------

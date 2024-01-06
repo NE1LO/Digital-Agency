@@ -1,110 +1,93 @@
 .container-services {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
+  @include displayFlexCenter(space-between);
   height: 430px;
   padding: 110px 0;
-}
 
-.servise-block {
-  display: flex;
-  flex-direction: column;
-  max-width: 530px;
-}
+  .service-block {
+    display: flex;
+    flex-direction: column;
+    max-width: 530px;
 
-.services-subtitle {
-  color: #f8f8f8;
-  text-align: justify;
-  font-family: Poppins;
-  font-weight: 700;
-  line-height: 155%;
-  letter-spacing: 0.02em;
-  display: flex;
-  align-items: center;
-  gap: 12px;
-  padding: 20px;
-}
-.services-subtitle::before {
-  display: block;
-  content: "";
-  width: 150px;
-  height: 2px;
-  background: #d8d8d8;
-}
+    &__subtitle {
+      @include displayFlexCenter(baseline, center);
+      font-weight: 700;
+      line-height: 155%;
+      gap: 12px;
+      padding-bottom: 20px;
+      &::before {
+        display: block;
+        content: "";
+        width: 150px;
+        height: 2px;
+        background: #d8d8d8;
+      }
+    }
 
-.service-subtitle {
-  padding: 25px 0 40px 0;
-}
+    &__title {
+      @include title;
+    }
 
-.service-btn {
-  width: 180px;
-  height: 48px;
-  background: $yellowColor;
-  color: #1e1e1e;
-  font-family: Poppins;
-  font-size: 16px;
-  font-weight: 400;
-  letter-spacing: 0.02em;
-  box-shadow: 10px 8px 0px 0px #ffeb3885;
-  transition: 0.3s;
-}
+    &__subtitle-two {
+      @include subtitle(color, justify);
+      line-height: 155%;
+      padding: 25px 0 40px 0;
+    }
 
-.service-btn:hover,
-.service-btn:focus {
-  box-shadow: 14px 10px 0px 0px #ffeb3885;
-}
+    &__btn {
+      @include buttonStyle;
+      box-shadow: 10px 8px 0px 0px #ffeb3885;
+      transition: 0.3s;
+      &:hover,
+      &:focus {
+        box-shadow: 14px 10px 0px 0px #ffeb3885;
+      }
+    }
+  }
 
-// ---------------------part-------------------------------------
+  // ---------------------part-------------------------------------
 
-.services-list {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-items: center;
-  gap: 20px;
-}
+  .services-list {
+    @include displayFlexCenter(flex-end);
+    flex-wrap: wrap;
+    gap: 60px 20px;
 
-.services-list__item {
-  position: relative;
-  width: 265px;
-  height: 170px;
-  border-radius: 5px;
-  flex-shrink: 0;
-  background: #fff;
-}
+    &__item {
+      position: relative;
+      width: 270px;
+      height: 170px;
+      border-radius: 5px;
+      flex-shrink: 0;
+      background: #fff;
+    }
 
-.services-list__title {
-  color: #000;
-  text-align: justify;
-  font-family: Poppins;
-  font-size: 16px;
-  font-weight: 700;
-  letter-spacing: 0.02em;
-  text-align: center;
-  padding-top: 50px;
-}
+    &__title {
+      color: #000;
+      text-align: justify;
+      font-family: Poppins;
+      font-size: 16px;
+      font-weight: 700;
+      letter-spacing: 0.02em;
+      text-align: center;
+      padding-top: 50px;
+    }
 
-.services-list__subtitle {
-  color: #696969;
-  text-align: center;
-  font-family: Poppins;
-  font-size: 12px;
-  font-weight: 400;
-  line-height: 155%;
-  letter-spacing: 0.02em;
-  padding-top: 12px;
-}
+    &__subtitle {
+      @include subtitle(#696969);
+      font-size: 12px;
+      line-height: 155%;
+      padding-top: 12px;
+    }
 
-.service-icon {
-  background-color: #ffeb38;
-  position: absolute;
-  border-radius: 50%;
-  width: 80px;
-  height: 80px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  border: 3px solid #fff;
-  left: 35%;
-  top: -25%;
+    .service-icon {
+      @include displayFlexCenter;
+      background-color: $yellowColor;
+      position: absolute;
+      border-radius: 50%;
+      width: 80px;
+      height: 80px;
+      border: 3px solid #fff;
+      left: 35%;
+      top: -25%;
+    }
+  }
 }
