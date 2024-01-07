@@ -11,65 +11,61 @@
 }
 
 .subtitle-portfolio {
+  @include displayFlexCenter;
+  @include subtitle(#fff, justify);
   position: relative;
-  color: #fff;
-  text-align: justify;
-  font-family: Poppins;
   line-height: 155%;
-  letter-spacing: 0.02em;
-  display: flex;
-  justify-content: center;
   align-items: center;
   gap: 20px;
-}
 
-.subtitle-portfolio::after {
-  content: " ";
-  display: block;
-  background-color: #fff;
-  width: 160px;
-  height: 2px;
-}
-
-.subtitle-portfolio::before {
-  content: " ";
-  display: block;
-  background-color: #fff;
-  width: 160px;
-  height: 2px;
+  &::after {
+    content: " ";
+    display: block;
+    background-color: #fff;
+    width: 160px;
+    height: 2px;
+  }
+  &::before {
+    content: " ";
+    display: block;
+    background-color: #fff;
+    width: 160px;
+    height: 2px;
+  }
 }
 
 .title-portfolio {
+  @include title;
   text-align: center;
   max-width: 450px;
   padding: 35px 0 60px 0;
 }
 
 .about-list {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  @include displayFlexCenter;
   gap: 12px;
-}
 
-.about-list-item__button {
-  border-radius: 5px;
-  background: $yellowColor;
-  padding: 10px 25px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  color: #000;
-  font-family: Poppins;
-  letter-spacing: 0.02em;
-}
+  &__item {
+    &__button {
+      border-radius: 5px;
+      background: $yellowColor;
+      padding: 10px 25px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color: #000;
+      font-family: Poppins;
+      letter-spacing: 0.02em;
+    }
 
-.about-list-item__button-error {
-  background-color: #fff;
-  padding: 10px 25px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+    &__button-error {
+      background-color: #fff;
+      padding: 10px 25px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+  }
 }
 
 .about-photo-list {

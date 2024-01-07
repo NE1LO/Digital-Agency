@@ -1,44 +1,43 @@
 .section-contacts {
+  @include displayFlexCenter;
   height: 850px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
 }
 
 .container-contscts {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+  @include displayFlexCenter(space-between);
   gap: 30px;
 }
 
 .contact-form-block {
-  display: flex;
+  @include displayFlexCenter(center, baseline);
   flex-direction: column;
-  justify-content: center;
 }
 
-.contscts-title {
+.contacts-title {
+  @include title;
   max-width: 650px;
   padding-bottom: 30px;
 }
 
-.contsct-subtitle {
+.contact-subtitle {
+  @include subtitle;
   display: flex;
   align-items: center;
   gap: 10px;
   padding-bottom: 20px;
+
+  &::before {
+    display: block;
+    content: "";
+    width: 150px;
+    height: 2px;
+    background: #d8d8d8;
+  }
 }
 
-.contsct-subtitle::before {
-  display: block;
-  content: "";
-  width: 150px;
-  height: 2px;
-  background: #d8d8d8;
-}
-
-.contsct-subtitle-more {
+.contacts-subtitle-more {
+  @include subtitle;
+  text-align: justify;
   max-width: 530px;
   padding-bottom: 30px;
 }
@@ -49,21 +48,30 @@
   display: flex;
   flex-direction: column;
   gap: 25px;
-}
 
-.form-input {
-  width: 530px;
-  height: 50px;
-  border-radius: 5px;
-  border: 1px solid #cacaca;
-  background: #fff;
-}
+  &__input {
+    width: 530px;
+    height: 50px;
+    border-radius: 5px;
+    border: 1px solid #cacaca;
+    background: #fff;
+    box-sizing: border-box;
+    padding-left: 20px;
+  }
 
-.form-textarea {
-  width: 533px;
-  height: 149px;
-  flex-shrink: 0;
-  resize: none;
+  &__textarea {
+    font-size: 16px;
+    width: 533px;
+    height: 149px;
+    flex-shrink: 0;
+    resize: none;
+    box-sizing: border-box;
+    padding: 20px 0 0 20px;
+  }
+
+  &__button {
+    @include buttonStyle;
+  }
 }
 
 .form-button {
