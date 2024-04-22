@@ -3,7 +3,7 @@
   height: 850px;
 }
 
-.container-contscts {
+.container-contacts {
   @include displayFlexCenter(space-between);
   gap: 30px;
 }

@@ -1,9 +1,84 @@
 .container-footer {
+  @include displayFlexCenter(space-between, center);
   padding: 100px 0 100px 0;
+  height: 200px;
+  gap: 30px;
 }
 
-.container-footer {
-  display: flex;
-  justify-content: center;
-  gap: 30px;
+.footer__link-wrap {
+  @include displayFlexCenter(space-between, start);
+  flex-direction: column;
+  height: 100%;
+  max-width: 400px;
+  &__logo {
+    @include displayFlexCenter(start, center);
+    gap: 5px;
+    font-family: Inter;
+    font-size: 24px;
+    font-weight: 600;
+  }
+  &__subtitle {
+    @include subtitle(#fff, start);
+  }
+  &__list {
+    @include displayFlexCenter(space-between, center);
+    gap: 10px;
+    &__item {
+    }
+  }
+}
+
+.link {
+  @include subtitle(#fff, start);
+  transition: 0.2s;
+}
+
+.link:hover {
+  color: $yellowColor;
+}
+// =================================================
+
+.footer__services-wrap {
+  @include displayFlexCenter(space-between, start);
+  flex-direction: column;
+  height: 100%;
+  &__subtitle {
+    @include subtitle(#fff, start, 18px);
+    font-weight: 700;
+  }
+  &__list {
+    @include displayFlexCenter(start, start);
+    flex-direction: column;
+    gap: 15px;
+  }
+}
+// =================================================
+.footer__resources-wrap {
+  @include displayFlexCenter(space-between, start);
+  flex-direction: column;
+  height: 100%;
+  &__subtitle {
+    @include subtitle(#fff, start, 18px);
+    font-weight: 700;
+  }
+  &__list {
+    @include displayFlexCenter(start, start);
+    flex-direction: column;
+    gap: 15px;
+  }
+  // =================================================
+}
+.footer__information-wrap {
+  @include displayFlexCenter(space-between, start);
+  flex-direction: column;
+  height: 100%;
+  &__subtitle {
+    @include subtitle(#fff, start, 18px);
+    font-weight: 700;
+  }
+  &__list {
+    @include displayFlexCenter(start, start);
+    flex-direction: column;
+    gap: 15px;
+  }
 }
